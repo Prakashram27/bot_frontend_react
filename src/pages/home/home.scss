@@ -1,0 +1,122 @@
+//options for header with title
+.rcw-conversation-container > .rcw-header {
+  background: rgba(174, 0, 0, 1);
+  text-align: left;
+  font-weight: bolder;
+  //altering size of header
+  padding: 3px 0px 0px 13px;
+  height: 64px;
+}
+
+.rcw-title {
+  text-align: left;
+  font-family: "system-ui";
+}
+
+.rcw-messages-container {
+  height: 500px;
+  max-height: 500px;
+}
+
+//customize whole container
+.rcw-conversation-container {
+  max-width: 300px;
+}
+
+//options for bot text
+.rcw-response .rcw-message-text {
+  max-width: 300px;
+  padding: 5px 15px 5px;
+  font-size: 14px;
+}
+
+.rcw-message-client {
+  margin-bottom: 3px;
+  margin-top: 3px;
+  margin-right: 6px;
+}
+
+.rcw-message {
+  margin-bottom: 3px;
+  margin-top: 3px;
+  margin-right: 6px;
+}
+
+
+//options for user text
+.rcw-client .rcw-message-text {
+  background: rgba(174, 0, 0, 0.4);
+  max-width: 300px;
+  padding: 10px 10px 10px;
+  font-size: 14px;
+}
+
+//options for closing button
+.rcw-conversation-container .rcw-close-button {
+  background-color: rgba(174, 0, 0, 0.9);
+}
+
+//launcher icon before u start the widget / before u open it
+.rcw-launcher {
+  background-color: rgba(174, 0, 0, 0.9);
+}
+
+//changing the messages in general (user and bot) - font, color and so on
+.rcw-message {
+  color: black;
+}
+
+.rcw-picker-btn {
+  display: none;
+}
+
+.rcw-input {
+  font-size: 14px;
+  display: flex;
+  margin-left: 0px;
+}
+
+.rcw-send {
+  display: flex;
+}
+
+.rcw-sender {
+  display: flex;
+  align-items: center;
+
+}
+
+//customize quick buttons
+.rcw-conversation-container > .quick-buttons-container > .quick-buttons > .quick-list-button > .quick-button {
+
+  border-color: rgba(174, 0, 0, 0.9);
+  color: rgba(174, 0, 0, 0.9);
+  font-size: 14px;
+  font-family: system-ui;
+  font-weight: normal;
+  border-width: 1px;
+  border-radius: 5px;
+  display: flex;
+}
+
+//customize style if button is clicked
+.rcw-conversation-container > .quick-buttons-container > .quick-buttons > .quick-list-button > .quick-button:active {
+  background-color: rgba(174, 0, 0, 0.9);
+  border-color: rgba(174, 0, 0, 0.9);
+  color: white;
+  //border-width: 3px;
+}
+
+.rcw-new-message {
+  background-color: #f4f7f9;
+  margin: 0px;
+  display: flex;
+  width: 320px;
+}
+
+.quick-buttons {
+  list-style: circle;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
