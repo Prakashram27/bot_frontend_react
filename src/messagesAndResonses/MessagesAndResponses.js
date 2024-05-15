@@ -4,6 +4,17 @@ import CustomCarousel from "../customComponents/CustomCarousel";
 import CustomButtonCard from "../customComponents/customButtonCard/CustomButtonCard";
 import CustomImage from "../customComponents/CustomImage";
 
+
+import { v4 as uuidv4 } from 'uuid';
+
+// Function to generate a UUID
+function generateUserId() {
+    return uuidv4();
+}
+const userID = generateUserId();
+
+
+
 //Checks whether the bot has asked for the user's name
 let askForName;
 
@@ -13,14 +24,19 @@ export function handleMessagesAndResponses(newMessage) {
         newMessage = '/tell_name{"name_ent": "' + newMessage + '"}';
         askForName = false;
     }
+    
+
+    // let userID = generateUserId();
+    console.log('GENERATED UUID IS, ', userID)
+    // userID = "Prakash"
 
     // POST request using fetch() (used for sending/receiving messages)
-    fetch("http://localhost:5005/webhooks/rest/webhook", {
+    fetch("https://chatbotapi.yavar.ai/webhooks/rest/webhook", {
         // Adding method type
         method: "POST",
         // Adding body or contents to send
         body: JSON.stringify({
-            sender: "test_user",
+            sender: userID ,
             //message which was typed in via keyboard
             message: newMessage
         }),
