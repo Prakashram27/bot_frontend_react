@@ -53,10 +53,10 @@ const Home = () => {
                         // initPayload={"/get_started"}
                         customData={{"language": "en"}}
                         params={{'storage': 'session'}}
-                        title={"Copper Chatbot "}
-                        subtitle={""}
+                        title={"Copper Chatbot"}
+                
                         emojis={'NO'}
-                        senderPlaceHolder={"Enter your message here"}
+                        senderPlaceHolder={"Enter your message here....."}
                         showTimeStamp={false}
                 />
             </div>

@@ -31,7 +31,7 @@ export function handleMessagesAndResponses(newMessage) {
     // userID = "Prakash"
 
     // POST request using fetch() (used for sending/receiving messages)
-    fetch("https://chatbotapi.yavar.ai/webhooks/rest/webhook", {
+    fetch("http://localhost:5005/webhooks/rest/webhook", {
         // Adding method type
         method: "POST",
         // Adding body or contents to send

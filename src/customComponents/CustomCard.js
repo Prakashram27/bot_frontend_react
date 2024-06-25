@@ -10,7 +10,7 @@ export default class CustomCard extends Component {
             <Card.Body>
                 <Card.Title className="cardTitleBig">Zusammenfassung</Card.Title>
                 <Card.Subtitle className="cardSubTitle"></Card.Subtitle>
-                <Card.Text className="cardText">
+                <Card.Text className="cardText"> 
                 </Card.Text>
                 <Card.Title className="cardTitle">{this.props.item.title} <Badge className="badgeTitle"
                                                                                  pill>#{this.props.item.position}</Badge></Card.Title>

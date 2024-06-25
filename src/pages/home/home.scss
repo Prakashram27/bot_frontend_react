@@ -1,6 +1,6 @@
 //options for header with title
 .rcw-conversation-container > .rcw-header {
-  background: rgba(174, 0, 0, 1);
+  background: #0D47A1;
   text-align: left;
   font-weight: bolder;
   //altering size of header
@@ -8,10 +8,14 @@
   height: 64px;
 }
 
+
 .rcw-title {
   text-align: left;
-  font-family: "system-ui";
+  font-family: "fangsong";
+  font-size: medium;
 }
+.rcw-title
+
 
 .rcw-messages-container {
   height: 500px;
@@ -45,7 +49,7 @@
 
 //options for user text
 .rcw-client .rcw-message-text {
-  background: rgba(174, 0, 0, 0.4);
+  background: #E3F2FD;
   max-width: 300px;
   padding: 10px 10px 10px;
   font-size: 14px;
@@ -53,17 +57,18 @@
 
 //options for closing button
 .rcw-conversation-container .rcw-close-button {
-  background-color: rgba(174, 0, 0, 0.9);
+  background-color: #0D47A1;
 }
 
 //launcher icon before u start the widget / before u open it
 .rcw-launcher {
-  background-color: rgba(174, 0, 0, 0.9);
+  background-color: #0D47A1;
 }
 
 //changing the messages in general (user and bot) - font, color and so on
 .rcw-message {
   color: black;
+  font-weight: 480;
 }
 
 .rcw-picker-btn {
@@ -110,7 +115,7 @@
 .rcw-new-message {
   background-color: #f4f7f9;
   margin: 0px;
-  display: flex;
+  // display: flex;
   width: 320px;
 }
 
