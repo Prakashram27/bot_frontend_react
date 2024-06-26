@@ -1,4 +1,6 @@
 import './App.css';
+// import Header from './header/header';
+import Header from './header/Navbar'
 import Home from "./pages/home/Home";
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -7,7 +9,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
     return (
         <div className="App2">
-            <Home/>
+            <Header />
+            <Home />
         </div>
     );
 }

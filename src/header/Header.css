@@ -1,0 +1,66 @@
+/* Base styles for the header */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* Ensure it's above other content */
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    /* Example border style */
+    padding: 25px;
+}
+
+/* Flex container for logo and title */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Title container for centering */
+.title-container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    /* Allow it to take up remaining space */
+}
+
+/* Optional: Adjust the styling of the title if needed */
+.title-container span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Adjust layout for mobile view */
+@media (max-width: 768px) {
+    .logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo a {
+        margin-bottom: 10px;
+        /* Space between image and text */
+    }
+
+    .title-container {
+        justify-content: center;
+        /* Center the title in mobile view */
+        flex: none;
+        /* Reset flex value for mobile */
+    }
+}
+
+.copper-logo {
+    width: 130px;
+}
+
+#logo2 {
+    font-weight: 700;
+    font-size: 20px;
+}
