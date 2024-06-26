@@ -50,7 +50,7 @@ const Home = () => {
             <div className="Widget">
                 <Widget handleNewUserMessage={handleNewUserMessage}
                         handleQuickButtonClicked={handleQuickButtonClicked}
-                        // initPayload={"/get_started"}
+                        // initPayload={"greet"}
                         customData={{"language": "en"}}
                         params={{'storage': 'session'}}
                         title={"Copper Chatbot"}
